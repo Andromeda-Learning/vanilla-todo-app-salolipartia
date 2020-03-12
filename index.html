@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO</title>
     <link rel="stylesheet" href="style.css">
-    <script src="function.js"></script>
+
 </head>
 
 <body>
-    <div id="myDIV" class="header">
-        <h2>Todo List</h2>
-        <input type="text" id="myInput" placeholder="Title...">
-        <button onclick="newElement()">Add</button>
+    <div class="app">
+        <form onsubmit="addItem(event)">
+            <h2>Todo List</h2>
+            <input type="text" id="myInput" placeholder="Task Title...">
+            <button type="submit">Add</button>
+        </form>
     </div>
-    <ul id="myUL">
-    </ul>
+    <ul class="myUL"></ul>
+    <script src="function.js"></script>
 </body>
 
 </html>
