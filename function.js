@@ -13,6 +13,7 @@ function submit(e) {
     } else {
         addTask(input.value)
     }
+    input.value = ''
 }
 
 // add tasks
